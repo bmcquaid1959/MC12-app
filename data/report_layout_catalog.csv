@@ -1,0 +1,203 @@
+﻿metric,display_label_long,report_view,layout_row_id,section_order,metric_order_wi_section,indent_level,row_border_top,row_kind,include_in_default_view,drilldown_parent_metric,font,layout_row_adj,display_override_dollars,display_override_percent,display_override_rank
+id,,,,,,,,,,,,,value,percent,rank
+date,Date,,,,,,,,,,,,value,percent,rank
+yr,Year,,,,,,,,,,,,value,percent,rank
+mo,Month,,,,,,,,,,,,value,percent,rank
+qtr,Quarter,,,,,,,,,,,,value,percent,rank
+dry_store_rev,Dry Store revenue,,,,,,,,,,,,value,percent,rank
+co_num,,,,,,,,,,,,,value,percent,rank
+co_id,,,,,,,,,,,,,value,percent,rank
+num_weeks,Weeks in period,Profit & Loss Statement,1,1,1,0,,detail,FALSE,,italics,,value,value,blank
+,SALES,Profit & Loss Statement,2,2,1,0,double,section_header,TRUE,,bold,,value,percent,rank
+rev_dry,Dry Cleaning,Profit & Loss Statement,3,2,2,1,double,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_ldy,Laundry,Profit & Loss Statement,4,2,3,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_ttl_ldy_dry,Dry Cleaning & Laundry Total ,Profit & Loss Statement,5,2,4,2,,sub_total,FALSE,rev_gross_sales,italics,,value,percent,rank
+rev_drape,Drapes,Profit & Loss Statement,6,2,5,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_tailor,Tailoring,Profit & Loss Statement,7,2,6,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_other,Other,Profit & Loss Statement,8,2,7,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_gross_sales,GROSS SALES,Profit & Loss Statement,9,2,8,0,thin,section_total,TRUE,,bold,,value,percent,rank
+disc_dry,Dry Cleaning Discount,Profit & Loss Statement,10,3,1,1,thin,detail,FALSE,disc_ttl,,,value,percent,rank
+disc_ldy,Laundry Discount,Profit & Loss Statement,11,3,2,1,,detail,FALSE,disc_ttl,,,value,percent,rank
+disc_ttl,TOTAL DISCOUNT,Profit & Loss Statement,12,3,3,0,thin,section_total,TRUE,,bold,,value,percent,rank
+rev_net_sales,NET SALES,Profit & Loss Statement,13,4,1,0,thick,total,TRUE,,bold,,value,value,blank
+,EXPENSES,Profit & Loss Statement,14,5,1,0,double,section_header,FALSE,exp_ttl,bold,,value,percent,rank
+exp_pl_prod_labor,Productive Labor,Profit & Loss Statement,15,6,1,2,double,detail,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ow_outside_work,Outside Work,Profit & Loss Statement,16,6,2,2,,detail,FALSE,exp_ttl,bold,,value,percent,rank
+,PRODUCTIVE SUPPLIES,Profit & Loss Statement,17,7,1,1,thin,section_header,FALSE,exp_ps_ttl,bold,,value,percent,rank
+exp_ps_solv_soap_chem,Solv Soap Chem,Profit & Loss Statement,18,7,2,2,thin,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_haz_waste,Haz Waste,Profit & Loss Statement,19,7,3,2,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_finishing,Finishing,Profit & Loss Statement,20,7,4,2,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_packaging,Packaging,Profit & Loss Statement,21,7,5,2,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_ttl,TOTAL PRODUCTIVE SUPPLIES,Profit & Loss Statement,22,7,6,3,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+,UTILITIES,Profit & Loss Statement,23,8,1,1,thin,section_header,FALSE,exp_ut_ttl,bold,,value,percent,rank
+exp_ut_gas_oil,Gas / Oil,Profit & Loss Statement,24,8,2,2,thin,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_electricity,Electricity,Profit & Loss Statement,25,8,3,2,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_water_sewer,Water / Sewer,Profit & Loss Statement,26,8,4,2,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_tele_data,Telephone / Data,Profit & Loss Statement,27,8,5,2,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_ttl,TOTAL UTILITIES,Profit & Loss Statement,28,8,6,3,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_bg_rent,Rent,Profit & Loss Statement,29,9,1,2,thin,detail,FALSE,exp_bg_ttl,,,value,percent,rank
+exp_bg_repairs_maint,Repairs / Maintenance,Profit & Loss Statement,30,9,2,2,,detail,FALSE,exp_bg_ttl,,,value,percent,rank
+exp_bg_depr,Depreciation,Profit & Loss Statement,31,9,3,2,,detail,FALSE,exp_bg_ttl,,,value,percent,rank
+exp_bg_ttl,TOTAL BUILDING,Profit & Loss Statement,32,9,4,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ma_labor,Labor,Profit & Loss Statement,33,10,1,2,thin,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_repairs,Repairs,Profit & Loss Statement,34,10,2,2,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_depr,Depreciation,Profit & Loss Statement,35,10,3,2,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_leases,Equipment Leases,Profit & Loss Statement,36,10,4,2,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_ttl,TOTAL MACHINE,Profit & Loss Statement,37,10,5,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ic_labor_indirect,Indirect Labor,Profit & Loss Statement,38,11,1,2,thin,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_benefits,Benefits,Profit & Loss Statement,39,11,2,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_labor_supervis,Supervisory Labor,Profit & Loss Statement,40,11,3,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_exp_incl_trash,Expenses w/ Trash,Profit & Loss Statement,41,11,4,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_insu_comp,Workers' Comp Insurance,Profit & Loss Statement,42,11,5,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_insu_prop_liab,Property Liability Insurance,Profit & Loss Statement,43,11,6,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_tax_payroll,Payroll Tax,Profit & Loss Statement,44,11,7,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_tax_other,Other Tax,Profit & Loss Statement,45,11,8,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_claims,Claims,Profit & Loss Statement,46,11,9,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_ttl,TOTAL INDIRECT LABOR,Profit & Loss Statement,47,11,10,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_sd_labor_delivery,Delivery Labor,Profit & Loss Statement,48,12,1,2,thin,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_fleet_expense,Fleet Expense,Profit & Loss Statement,49,12,2,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_delivery_depr,Depreciation,Profit & Loss Statement,50,12,3,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_fleet_insurance,Fleet insurance,Profit & Loss Statement,51,12,4,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_exp,Dry Store Expenses,Profit & Loss Statement,52,12,5,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_labor,Dry Store Labor,Profit & Loss Statement,53,12,6,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_computer_exp,Dry Store Computer Expense,Profit & Loss Statement,54,12,7,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_computer_depr,Dry Store Computer Deprec,Profit & Loss Statement,55,12,8,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_sales_promo_marketing,Sales / Promo marketing,Profit & Loss Statement,56,12,9,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_ttl,TOTAL SALES AND DISTRIBUTION,Profit & Loss Statement,57,12,10,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_oa_labor,Office & Admin Labor,Profit & Loss Statement,58,13,1,2,thin,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_supply,Office & Admin Supply,Profit & Loss Statement,59,13,2,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_expenses,Office & Admin Expense,Profit & Loss Statement,60,13,3,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_office_computer,Office Computer Expense,Profit & Loss Statement,61,13,4,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_plant_computer,Plant Computer Expense,Profit & Loss Statement,62,13,5,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_computer_and_office_depr,Computer and Office Deprec,Profit & Loss Statement,63,13,6,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_bad_debt,Bad Debt,Profit & Loss Statement,64,13,7,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_legal_prof,Legal Prof Exp,Profit & Loss Statement,65,13,8,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_ttl,TOTAL OFFICE & ADMINISTRATION,Profit & Loss Statement,66,13,9,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ttl,TOTAL EXPENSES,Profit & Loss Statement,67,14,1,0,thick,total,TRUE,,bold,,value,percent,rank
+net_op_inc,NET OPERATING INCOME,Profit & Loss Statement,68,15,1,0,thick,total,TRUE,,bold,,value,percent,rank
+exp_ot_interest_exp,Interest Expense,Profit & Loss Statement,69,16,1,2,,detail,FALSE,net_profit,,,value,percent,rank
+exp_ot_non_op_inc,Other non-operating Income,Profit & Loss Statement,70,16,2,2,,detail,FALSE,net_profit,,,value,percent,rank
+exp_non_op_ttl,Non-Operating expenses,Profit & Loss Statement,71,16,3,1,,sub-total,FALSE,net_profit,bold,,value,percent,rank
+net_profit,NET PROFIT,Profit & Loss Statement,72,16,4,0,double,total,TRUE,,bold,pl_np_start,value,percent,rank
+depr_total,Plus Depreciation Total,Profit & Loss Statement,73,17,1,1,double,detail,FALSE,cash_flow,,pl_nonop_cf_adj,value,percent,rank
+exp_ot_non_op_inc,Less/Plus Other non-operating Income,Profit & Loss Statement,74,17,2,1,,detail,FALSE,cash_flow,,pl_nonop_cf_adj,value,percent,rank
+cash_flow,CASH FLOW,Profit & Loss Statement,75,17,3,0,thick,total,TRUE,,bold,pl_nonop_cf_adj,value,percent,rank
+exp_ot_interest_exp,Plus Interest Expense,Profit & Loss Statement,76,17,4,1,,detail,FALSE,op_ebitda,,pl_interest_ebitda_adj,value,percent,rank
+op_ebitda,OPERATING EBITDA,Profit & Loss Statement,77,17,5,0,thick,total,TRUE,,bold,pl_interest_ebitda_adj,value,percent,rank
+exp_ot_non_op_inc,Less/Plus Other non-operating Inc or Exp,Profit & Loss Statement,78,17,6,1,,detail,FALSE,ebitda_w_noi,,pl_nonop_ebitda_adj,value,percent,rank
+ebitda_w_noi,EBITDA with NOI,Profit & Loss Statement,79,17,7,0,thick,total,TRUE,,bold,pl_nonop_ebitda_adj,value,percent,rank
+,PIECE VOLUME,Piece Analysis,1,1,1,0,,section_header,TRUE,,bold,,value,value,value
+pcs_ttl,Total Pieces,Piece Analysis,2,1,2,0,double,total,TRUE,,bold,,value,value,value
+pcs_dry,Dry Cleaning,Piece Analysis,3,1,3,1,thick,detail,FALSE,pcs_ttl,,,value,value,value
+pcs_ldy,Laundry,Piece Analysis,4,1,4,1,,detail,FALSE,pcs_ttl,,,value,value,value
+pcs_other,Other,Piece Analysis,5,1,5,1,,detail,FALSE,pcs_ttl,,,value,value,value
+,PIECES PER RESOURCE,Piece Analysis,6,2,1,0,,section_header,TRUE,,bold,,value,value,value
+pcs_per_outlet,Pieces per outlet,Piece Analysis,7,2,2,1,double,detail,TRUE,,bold,,value,value,value
+pcs_per_week,Pieces per week,Piece Analysis,8,2,3,1,,detail,TRUE,,,,value,value,value
+pcs_per_outlet_per_week,Pieces per outlet per week,Piece Analysis,9,2,4,1,,detail,TRUE,,,,value,value,value
+pcs_per_employee,Pieces per employee,Piece Analysis,10,2,5,1,,detail,TRUE,,,,value,value,value
+pcs_per_hour,Pieces per hour,Piece Analysis,11,2,6,1,,detail,TRUE,,,,value,value,value
+,REVENUE per PIECE,Piece Analysis,12,3,1,0,,section_header,TRUE,,bold,,value,value,value
+rev_per_pc_dry,Dry Cleaning Net Revenue /pc,Piece Analysis,13,3,2,1,double,detail,TRUE,,,,value,value,value
+rev_per_pc_ldy,Laundry Net Revenue /pc,Piece Analysis,14,3,3,1,,detail,TRUE,,,,value,value,value
+rev_per_pc_ttl,Total Net Revenue /pc,Piece Analysis,15,3,4,0,thick,sub-total,TRUE,,bold,,value,value,value
+,EXPENSE per PIECE,Piece Analysis,16,4,1,0,thick,section_header,TRUE,,bold,,value,value,value
+exp_per_pc_prod_labor,Productive Labor /pc,Piece Analysis,17,4,2,1,double,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_outside_work,Outside Work /pc,Piece Analysis,18,4,3,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_prod_sup,Productive Supplies /pc,Piece Analysis,19,4,4,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_util,Utilities /pc,Piece Analysis,20,4,5,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_bldg,Building /pc,Piece Analysis,21,4,6,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_mach,Machine /pc,Piece Analysis,22,4,7,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_ind_cost,Indirect Labor /pc,Piece Analysis,23,4,8,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_sales_deliv,Sales & Delivery /pc,Piece Analysis,24,4,9,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_office_admin,Office & Administration /pc,Piece Analysis,25,4,10,1,,detail,FALSE,exp_per_pc_ttl,,,value,value,value
+exp_per_pc_ttl,Total Expenses /pc,Piece Analysis,26,4,11,0,thick,total,TRUE,,bold,,value,value,value
+exp_per_pc_net_op_inc,Net Operating Profit /pc,Piece Analysis,27,4,12,0,thick,total,FALSE,exp_per_pc_net_profit,bold,,value,value,value
+exp_per_pc_interest_exp,Interest Expense /pc,Piece Analysis,28,4,13,1,thick,detail,FALSE,exp_per_pc_net_profit,,,value,value,value
+exp_per_pc_other_non_op_inc,Non-Operating Income /pc,Piece Analysis,29,4,14,1,,detail,FALSE,exp_per_pc_net_profit,,,value,value,value
+exp_per_pc_net_profit,Net Profit /pc /pc,Piece Analysis,30,4,15,0,thick,total,TRUE,,bold,,value,value,value
+,ACTUAL VS STANDARD PERFORMANCE,Piece Analysis,31,5,1,0,thick,section_header,TRUE,,bold,,value,value,value
+num_total_hours,Total hours,Piece Analysis,32,5,2,1,double,detail,TRUE,act_pcs_per_hour,,,value,value,value
+pcs_ttl,Total pieces,Piece Analysis,33,5,3,1,,detail,TRUE,act_pcs_per_hour,,,value,value,value
+act_pcs_per_hour,Actual Pieces per hour,Piece Analysis,34,5,4,0,thick,total,TRUE,,bold,,value,value,value
+std_counter_20,Standard Counter (20),Piece Analysis,35,5,5,1,thick,detail,FALSE,std_ttl_hours,,,value,value,value
+std_markin_75,Standard Mark-in (75),Piece Analysis,36,5,6,1,,detail,FALSE,std_ttl_hours,,,value,value,value
+std_dry_spot_75,Standard DC Spot (75),Piece Analysis,37,5,7,1,,detail,FALSE,std_ttl_hours,,,value,value,value
+std_dry_finish_25,Standard DC Finish (75),Piece Analysis,38,5,8,1,,detail,FALSE,std_ttl_hours,,,value,value,value
+std_ldy_finish_25,Standard Laundry Finish (25),Piece Analysis,39,5,9,1,,detail,FALSE,std_ttl_hours,,,value,value,value
+std_IAB_60,Standard IAB (60),Piece Analysis,40,5,10,1,,detail,FALSE,std_ttl_hours,,,value,value,value
+std_ttl_hours,Total Standard Hours,Piece Analysis,41,5,11,1,thick,detail,FALSE,std_ttl_hours,,,value,value,value
+std_pcs_per_hour,Standard Pieces per hour,Piece Analysis,42,5,12,0,thick,total,TRUE,,bold,,value,value,value
+act_pcs_per_std_pcs,Actual as % of Standard,Piece Analysis,43,5,13,1,,detail,TRUE,,bold,,value,value,value
+std_pcs_per_act_pcs,Standard as % of Actual,Piece Analysis,44,5,14,1,,detail,TRUE,,bold,,value,value,value
+,EMPLOYEES,Labor Analysis,1,1,1,,thick,section_header,TRUE,,,,value,value,value
+num_employees,Number of Employees,Labor Analysis,2,1,2,0,double,detail,TRUE,,,,value,value,value
+num_emp_hired,Employees hired,Labor Analysis,3,1,3,1,,detail,FALSE,num_employees,,,value,value,value
+num_emp_left,Employees departed,Labor Analysis,4,1,4,1,,detail,FALSE,num_employees,,,value,value,value
+pct_emp_chng,Employee Net Change (%),Labor Analysis,5,1,5,1,,detail,FALSE,num_employees,,,value,value,value
+num_office_emp,Office Employees,Labor Analysis,6,1,6,0,,detail,TRUE,,,,value,value,value
+emp_per_office_staff,Employees Per Office Person,Labor Analysis,7,1,7,1,,detail,TRUE,,,,value,value,value
+num_tailors,Number of Tailors,Labor Analysis,8,1,8,0,,detail,TRUE,,,,value,value,value
+rev_ttl_ldy_dry_per_emp,Total Dry & LdRy Rev per Emp,Labor Analysis,9,1,9,1,,detail,TRUE,,,,value,value,value
+net_sales_per_employee,Net Sales Per Employee,Labor Analysis,10,1,10,1,,detail,TRUE,,,,value,value,value
+,LABOR COST PER HOUR,Labor Analysis,11,2,1,0,thick,section_header,TRUE,,,,value,value,value
+exp_per_hour_labor_ttl,Total Labor Cost per hour,Labor Analysis,12,2,2,0,double,detail,TRUE,,bold,,value,value,value
+exp_per_hour_pl_prod_labor,Productive Labor /hr,Labor Analysis,13,2,3,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+exp_per_hour_ma_labor,Mechanic Labor /hr,Labor Analysis,14,2,4,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+exp_per_hour_ic_labor_indirect,Indirect Labor /hr,Labor Analysis,15,2,5,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+exp_per_hour_ic_labor_supervis,Supervision Labor /hr,Labor Analysis,16,2,6,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+exp_per_hour_sd_labor_delivery,Delivery Labor /hr,Labor Analysis,17,2,7,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+exp_per_hour_sd_dry_store_labor,Dry Store Labor /hr,Labor Analysis,18,2,8,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+exp_per_hour_oa_labor,Office Labor /hr,Labor Analysis,19,2,9,1,,detail,FALSE,exp_per_hour_labor_ttl,,,value,value,value
+,LABOR BURDEN PER HOUR,Labor Analysis,20,3,1,0,thick,section_header,TRUE,,,,value,value,value
+exp_per_hour_burden_ttl,Total Labor Burden per hour,Labor Analysis,21,3,2,0,double,detail,TRUE,,bold,,value,value,value
+exp_per_hour_ic_benefits,Benefits /hr,Labor Analysis,22,3,3,1,,detail,FALSE,exp_per_hour_burden_ttl,,,value,value,value
+exp_per_hour_ic_insu_comp,Work Comp Insurance /hr,Labor Analysis,23,3,4,1,,detail,FALSE,exp_per_hour_burden_ttl,,,value,value,value
+exp_per_hour_ic_tax_payroll,Payroll Taxes /hr,Labor Analysis,24,3,5,1,,detail,FALSE,exp_per_hour_burden_ttl,,,value,value,value
+exp_per_hour_exp_ow_outside_work,Outside Work /hr,Labor Analysis,25,3,6,1,,detail,FALSE,exp_per_hour_burden_ttl,,,value,value,value
+,EMPLOYEE COST PER HOUR,Labor Analysis,26,4,1,0,thick,section_header,TRUE,,,,value,value,value
+emp_cost_per_hour_ttl,Total Employee Cost per hour,Labor Analysis,27,4,2,0,double,total,TRUE,,bold,,value,value,value
+pcs_per_hour_ttl,Pieces per hour,Labor Analysis,28,4,3,1,,detail,TRUE,,,,value,value,value
+total_pay,Total Pay,Labor Analysis,29,4,4,1,,detail,FALSE,pay_per_hour,,,value,value,value
+pay_per_hour,Pay per hour,Labor Analysis,30,4,5,1,,detail,TRUE,,,,value,value,value
+num_dry_stores,Number of Dry Stores,Outlet Analysis,,1,1,1,,,TRUE,,,,value,value,value
+num_pkg_plants,Number of Package Plants,Outlet Analysis,,1,2,1,,,TRUE,,,,value,value,value
+num_outlets,Number of Sales Outlets,Outlet Analysis,,1,3,0,,,TRUE,,bold,,value,value,value
+ns_per_outlet,Net Sales Per Outlet,Outlet Analysis,,2,1,1,,,TRUE,,,,value,value,value
+ns_per_outlet_week,Net Sales Per Outlet per week,Outlet Analysis,,2,2,1,,,TRUE,,,,value,value,value
+claims_per_outlet_per_month,Claims Per Outlet per month,Outlet Analysis,,2,3,1,,,TRUE,,,,value,value,value
+tele_data_per_outlet,Telephone & Data per outlet,Outlet Analysis,,2,4,1,,,TRUE,,,,value,value,value
+rt_num_pcs_ttl,Total number of pieces,Route Analysis,,1,1,0,,,TRUE,,bold,,value,value,value
+pct_rt_pcs_per_ttl_pcs,Number of route per total pieces,Route Analysis,,1,2,1,,,FALSE,rt_num_pcs_ttl,,,value,value,value
+rt_num_pcs_dry,Number of pieces Dry Cleaning,Route Analysis,,1,3,1,,,TRUE,,,,value,value,value
+pct_rt_dry_pcs_per_rt_ttl_pcs,Percent of Dry Cleaning per route,Route Analysis,,1,4,2,,,FALSE,rt_num_pcs_dry,,,value,value,value
+pct_rt_dry_pcs_per_ttl_dry_pcs,Percent of pieces per total dry cleaning,Route Analysis,,1,5,2,,,FALSE,rt_num_pcs_dry,,,value,value,value
+rt_num_pcs_ldy,Number of pieces Laundry,Route Analysis,,1,6,1,,,TRUE,,,,value,value,value
+pct_rt_ldy_pcs_per_rt_ttl_pcs,Percent of Laundry per route,Route Analysis,,1,7,2,,,FALSE,rt_num_pcs_ldy,,,value,value,value
+pct_rt_ldy_pcs_per_ttl_ldy_pcs,Percent of pieces per total laundry,Route Analysis,,1,8,2,,,FALSE,rt_num_pcs_ldy,,,value,value,value
+rt_sales,Route Sales,Route Analysis,,2,1,0,,,TRUE,,bold,,value,value,value
+rt_price_per_piece,Route Price per piece,Route Analysis,,2,2,1,,,TRUE,,,,value,value,value
+pct_rt_sales_per_net_sales,Route Sales per Net Sales (%),Route Analysis,,2,3,1,,,FALSE,rt_price_per_piece,,,value,value,value
+rt_sales_per_week,Sales per week,Route Analysis,,2,4,1,,,FALSE,rt_price_per_piece,,,value,value,value
+rt_sales_per_hour,Sales per hour,Route Analysis,,2,5,1,,,FALSE,rt_price_per_piece,,,value,value,value
+rt_num_stops,Number of stops,Route Analysis,,3,1,0,,,TRUE,,bold,,value,value,value
+rt_sales_per_stop,Sales per stop,Route Analysis,,3,2,1,,,FALSE,rt_num_stops,,,value,value,value
+rt_stops_per_week,Stops per week,Route Analysis,,3,3,1,,,FALSE,rt_num_stops,,,value,value,value
+rt_stops_per_hour_per_week,Stops per hour per week,Route Analysis,,3,4,1,,,FALSE,rt_num_stops,,,value,value,value
+rt_num_routes,Number of routes,Route Analysis,,4,1,0,,,TRUE,,bold,,value,value,value
+rt_sales_per_route,Sales per route,Route Analysis,,4,2,1,,,FALSE,rt_num_routes,,,value,value,value
+rt_stops_per_route_per_week,Stops per route per week,Route Analysis,,4,3,1,,,FALSE,rt_num_routes,,,value,value,value
+rt_num_segments,Number of segments,Route Analysis,,5,1,0,,,TRUE,,bold,,value,value,value
+rt_sales_per_segment,Sales per segment,Route Analysis,,5,2,1,,,FALSE,rt_num_segments,,,value,value,value
+rt_segments_per_route,Segments per route,Route Analysis,,5,3,1,,,FALSE,rt_num_segments,,,value,value,value
+rt_stops_per_segment_per_week,Stops per segment per week,Route Analysis,,5,4,1,,,FALSE,rt_num_segments,,,value,value,value
+rt_num_trucks,Number of trucks,Route Analysis,,6,1,0,,,TRUE,,bold,,value,value,value
+rt_sales_per_truck,Sales per truck,Route Analysis,,6,2,1,,,FALSE,rt_num_trucks,,,value,value,value
+rt_segments_per_truck,Segments per truck,Route Analysis,,6,3,1,,,FALSE,rt_num_trucks,,,value,value,value
+rt_stops_per_truck_per_week,Stops per truck per week,Route Analysis,,6,4,1,,,FALSE,rt_num_trucks,,,value,value,value
+rt_num_emp,Number of employees,Route Analysis,,7,1,0,,,TRUE,,bold,,value,value,value
+rt_sales_per_employee,Sales per employee,Route Analysis,,7,2,1,,,FALSE,rt_num_emp,,,value,value,value
+rt_labor_cost,Labor cost,Route Analysis,,7,3,1,,,FALSE,rt_num_emp,,,value,value,value
+pct_rt_labor_per_rt_sales,Route Labor per Sales (%),Route Analysis,,7,4,1,,,FALSE,rt_num_emp,,,value,value,value
+rt_num_hours,Number of hours,Route Analysis,,7,5,1,,,TRUE,,,,value,value,value
+rt_wage_per_hour,Wage per hour,Route Analysis,,7,6,1,,,TRUE,,,,value,value,value

@@ -1,0 +1,186 @@
+﻿mcbook_variable_name,metric,formula,display_label_long,format_type,aggregation_rule,time_period_support,higher_is_better,show_in_table_default,show_in_chart_default,can_drill,chart_family,report_sort_group,denominator_metric
+ID,id,,,integer,,,,,,,,,
+,date,,Date,date,,,,,,,,,
+YR,yr,,Year,integer,,,,,,,,,
+MO,mo,,Month,integer,,,,,,,,,
+,qtr,,Quarter,integer,,,,,,,,,
+No of Weeks,num_weeks,,Number of weeks,num2dec,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,FALSE,FALSE,peer_bar,sales_revenue,
+Dry Store Revenue,dry_store_rev,,Dry Store revenue,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,TRUE,TRUE,trend_line,sales_revenue,
+Co Number,co_num,,,integer,,,,,,,,,
+,co_id,,,string,,,,,,,,,
+,rev_gross_sales,rev_dry + rev_ldy + rev_drape + rev_tailor + rev_other,Gross Sales,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,sales_revenue,
+,rev_ttl_ldy_dry,rev_dry + rev_ldy,Dry Cleaning & Laundry Total ,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,TRUE,TRUE,trend_line,sales_revenue,
+DryCln,rev_dry,,Dry Cleaning,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,FALSE,FALSE,stack_component,sales_revenue,
+Laundry,rev_ldy,,Laundry,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,FALSE,FALSE,stack_component,sales_revenue,
+Drapes,rev_drape,,Drapes,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,FALSE,FALSE,stack_component,sales_revenue,
+Tailoring,rev_tailor,,Tailoring,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,FALSE,FALSE,stack_component,sales_revenue,
+Other Revenue,rev_other,,Other,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,FALSE,FALSE,stack_component,sales_revenue,
+,disc_ttl,disc_dry + disc_ldy,Total Discount,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,trend_line,sales_discount,
+Discount DC,disc_dry,,Dry Cleaning Discount,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,sales_discount,
+Dsicount LDY,disc_ldy,,Laundry Discount,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,sales_discount,
+,rev_net_sales,rev_gross_sales - disc_dry - disc_ldy,Net Sales,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,sales_total,
+Productive Labor,exp_pl_prod_labor,,Productive Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,FALSE,peer_bar,expense_direct,
+Outside Work,exp_ow_outside_work,,Outside Work,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,FALSE,peer_bar,expense_direct,
+,exp_ps_ttl,exp_ps_solv_soap_chem + exp_ps_haz_waste + exp_ps_finishing + exp_ps_packaging,Total Productive Supplies,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_prod_sup,
+Solv Soap Chem,exp_ps_solv_soap_chem,,Solv Soap Chem,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_prod_sup,
+Haz Waste,exp_ps_haz_waste,,Haz Waste,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_prod_sup,
+Finishing,exp_ps_finishing,,Finishing,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_prod_sup,
+Packaging,exp_ps_packaging,,Packaging,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_prod_sup,
+,exp_ut_ttl,exp_ut_gas_oil + exp_ut_electricity + exp_ut_water_sewer + exp_ut_tele_data,Total Utilities,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_utilities,
+Gas Oil,exp_ut_gas_oil,,Gas / Oil,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_utilities,
+Electricity,exp_ut_electricity,,Electricity,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_utilities,
+Water Sewer,exp_ut_water_sewer,,Water / Sewer,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_utilities,
+Telephone,exp_ut_tele_data,,Telephone / Data,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_utilities,
+,exp_bg_ttl,exp_bg_rent + exp_bg_repairs_maint + exp_bg_depr,Total Building,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_building,
+Rent,exp_bg_rent,,Rent,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_building,
+Bldg Repairs Maint,exp_bg_repairs_maint,,Repairs / Maintenance,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_building,
+Bldg Depreciation,exp_bg_depr,,Depreciation,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_building,
+,exp_ma_ttl,exp_ma_labor + exp_ma_repairs + exp_ma_depr + exp_ma_leases,Total Machine,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_machinery,
+Mach Labor,exp_ma_labor,,Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_machinery,
+Mach Repairs,exp_ma_repairs,,Repairs,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_machinery,
+Mach Depreciation,exp_ma_depr,,Depreciation,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_machinery,
+Equipment Leases,exp_ma_leases,,Equipment Leases,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_machinery,
+,exp_ic_ttl,exp_ic_labor_indirect + exp_ic_benefits + exp_ic_labor_supervis + exp_ic_exp_incl_trash + exp_ic_insu_comp + exp_ic_insu_prop_liab + exp_ic_tax_payroll + exp_ic_tax_other + exp_ic_claims,Total Indirect Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_indirect,
+Indirect labor,exp_ic_labor_indirect,,Indirect Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Benefits,exp_ic_benefits,,Benefits,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Supervis Labor,exp_ic_labor_supervis,,Supervisory Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Expenses Incl Trash,exp_ic_exp_incl_trash,,Expenses w/ Trash,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Comp Insurance,exp_ic_insu_comp,,Workers' Comp Insurance,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Prop Liab Insurance,exp_ic_insu_prop_liab,,Property Liability Insurance,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Payroll Tax,exp_ic_tax_payroll,,Payroll Tax,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Other Tax,exp_ic_tax_other,,Other Tax,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+Claims,exp_ic_claims,,Claims,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_indirect,
+,exp_sd_ttl,exp_sd_labor_delivery + exp_sd_fleet_expense + exp_sd_delivery_depr + exp_sd_fleet_insurance + exp_sd_dry_store_exp + exp_sd_dry_store_labor + exp_sd_dry_store_computer_exp + exp_sd_dry_store_computer_depr + exp_sd_sales_promo_marketing,Total Sales and Distribution,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_sales_delivery,
+Delivery labor,exp_sd_labor_delivery,,Delivery Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Fleet Expense,exp_sd_fleet_expense,,Fleet Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Delivery Deprec,exp_sd_delivery_depr,,Depreciation,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Fleet insurance,exp_sd_fleet_insurance,,Fleet insurance,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Dry Store Exp,exp_sd_dry_store_exp,,Dry Store Expenses,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Dry Store Labor,exp_sd_dry_store_labor,,Dry Store Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Dry Store Computer Exp,exp_sd_dry_store_computer_exp,,Dry Store Computer Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Dry Store Computer Deprec,exp_sd_dry_store_computer_depr,,Dry Store Computer Deprec,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+Sales Promo Advertising,exp_sd_sales_promo_marketing,,Sales / Promo marketing,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_sales_delivery,
+,exp_oa_ttl,exp_oa_labor + exp_oa_supply + exp_oa_expenses + exp_oa_office_computer + exp_oa_plant_computer + exp_oa_computer_and_office_depr + exp_oa_bad_debt + exp_oa_legal_prof,Total Office & Administration,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_office_admin,
+Office Admin Labor,exp_oa_labor,,Office & Admin Labor,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Office Admin Supply,exp_oa_supply,,Office & Admin Supply,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Office Admin Exp,exp_oa_expenses,,Office & Admin Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Office Computer Exp,exp_oa_office_computer,,Office Computer Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Plant Computer Exp,exp_oa_plant_computer,,Plant Computer Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Computer and Office Deprec,exp_oa_computer_and_office_depr,,Computer and Office Deprec,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Bad Debt,exp_oa_bad_debt,,Bad Debt,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+Legal Prof Exp,exp_oa_legal_prof,,Legal Prof Exp,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
+,exp_ttl,exp_pl_prod_labor + exp_ow_outside_work + exp_ps_ttl + exp_ut_ttl + exp_bg_ttl + exp_ma_ttl + exp_ic_ttl + exp_sd_ttl + exp_oa_ttl,Total Expenses,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_total,
+,net_op_inc,rev_net_sales - exp_ttl,Net Operating Income,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,
+,exp_non_op_ttl,exp_ot_interest_exp + exp_ot_non_op_inc,Non-Operating expenses,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
+Interest Exp,exp_ot_interest_exp,,Interest Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
+Other Non Op Inc or Exp,exp_ot_non_op_inc,,Other non-operating Income,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
+,net_profit,net_op_inc - exp_ot_interest_exp + exp_ot_non_op_inc,Net Profit,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,
+,depr_total,exp_bg_depr + exp_ma_depr + exp_sd_delivery_depr + exp_sd_dry_store_computer_depr + exp_oa_computer_and_office_depr,Depreciation Total,dollar,sum,monthly|ytd|quarterly|annual,TRUE,FALSE,FALSE,FALSE,trend_line,profit_summary,
+,cash_flow,net_profit + depr_total - exp_ot_non_op_inc ,Cash flow,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,
+,op_ebitda,cash_flow + exp_ot_interest_exp,Operating EBITDA,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,
+,ebitda_w_noi,op_ebitda + exp_ot_non_op_inc,EBITDA with NOI,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,
+,pcs_ttl,pcs_dry + pcs_ldy + pcs_other,Total Pieces,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,TRUE,,,
+DC PCS,pcs_dry,,Dry Cleaning,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+LDY PCS,pcs_ldy,,Laundry,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+Other PCS,pcs_other,,Other,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,pcs_per_outlet,pcs_ttl / num_outlets,Pieces per outlet,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_outlets
+,pcs_per_week,pcs_ttl / num_weeks,Pieces per week,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
+,pcs_per_outlet_per_week,pcs_per_outlet / num_weeks,Pieces per outlet per week,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
+,pcs_per_employee,pcs_ttl / num_employees,Pieces per employee,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_employees
+,pcs_per_hour,pcs_ttl / num_total_hours,Pieces per hour,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_total_hours
+,rev_per_pc_dry,(rev_dry - disc_dry) / pcs_dry,Dry Cleaning Net Revenue,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_dry
+,rev_per_pc_ldy,(rev_ldy - disc_ldy) / pcs_ldy,Laundry Net Revenue,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ldy
+,rev_per_pc_ttl,rev_net_sales / pcs_ttl,Total Net Revenue,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ttl
+,exp_per_pc_prod_labor,exp_pl_prod_labor / pcs_ttl,Productive Labor,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_outside_work,exp_ow_outside_work / pcs_ttl,Outside Work,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_prod_sup,exp_ps_ttl / pcs_ttl,Productive Supplies,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_util,exp_ut_ttl / pcs_ttl,Utilities,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_bldg,exp_bg_ttl / pcs_ttl,Building,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_mach,exp_ma_ttl / pcs_ttl,Machine,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_ind_cost,exp_ic_ttl / pcs_ttl,Indirect Labor,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_sales_deliv,exp_sd_ttl / pcs_ttl,Sales & Delivery,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_office_admin,exp_oa_ttl / pcs_ttl,Office & Administration,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_ttl,exp_ttl / pcs_ttl,Total Expenses,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,TRUE,,,pcs_ttl
+,exp_per_pc_net_op_inc,rev_per_pc_ttl / pcs_ttl,Net Operating Profit,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_interest_exp,exp_ot_interest_exp / pcs_ttl,Interest Expense,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_other_non_op_inc,exp_ot_non_op_inc / pcs_ttl,Non-Operating Income,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_net_profit,net_profit / pcs_ttl,Net Profit,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+Total Hours,num_total_hours,,Total hours,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,act_pcs_per_hour,pcs_ttl / num_total_hours,Actual Pieces per hour,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_total_hours
+,std_counter_20,(pcs_dry / 3 + pcs_ldy / 5 + pcs_other ) / 20,Standard Counter (20),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,std_markin_75,(pcs_dry + pcs_ldy + pcs_other ) / 75,Standard Mark-in (75),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,std_dry_spot_75,(pcs_dry ) / 75,Standard DC Spot (75),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,std_dry_finish_25,(pcs_dry ) / 25,Standard DC Finish (75),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,std_ldy_finish_25,(pcs_ldy ) / 25,Standard Laundry Finish (25),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,std_IAB_60,(pcs_dry + pcs_ldy + pcs_other ) / 60,Standard IAB (60),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,std_ttl_hours,std_counter_20 + std_markin_75 + std_dry_spot_75 + std_dry_finish_25 + std_ldy_finish_25 + std_IAB_60,Total Standard Hours,integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,TRUE,,,
+,std_pcs_per_hour,pcs_ttl / std_ttl_hours,Standard Pieces per hour,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,std_ttl_hours
+,act_pcs_per_std_pcs,act_pcs_per_hour / std_pcs_per_hour,Actual as % of Standard,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,std_pcs_per_hour
+,std_pcs_per_act_pcs,std_pcs_per_hour / act_pcs_per_hour,Standard as % of Actual,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,act_pcs_per_hour
+No of Employees,num_employees,,Number of Employees,integer,last,monthly|ytd|quarterly|annual,FALSE,,,,,,
+No of Emplyees Hired,num_emp_hired,,Employees hired,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+No of Emplyees Left,num_emp_left,,Employees departed,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,pct_emp_chng,(num_employees / (num_employees - num_emp_hired + num_emp_left)) - 1,Employee Net Change (%),pct2dec,custom,monthly|ytd|quarterly|annual,FALSE,,,,,,
+Office Employees,num_office_emp,,Office Employees,integer,last,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,emp_per_office_staff,(num_employees - num_office_emp) / num_office_emp,Employees Per Office Person,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
+No of Tailors,num_tailors,,Number of Tailors,integer,last,monthly|ytd|quarterly|annual,TRUE,,,,,,
+Total PAY,total_pay,,Total Pay,dollar2dec,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,rev_ttl_ldy_dry_per_emp,rev_ttl_ldy_dry / num_employees,Total Dry Cleaning & Laundry Rev per Emp,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_employees
+,net_sales_per_employee,rev_net_sales / num_employees,Net Sales Per Employee,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_employees
+,exp_per_hour_labor_ttl,exp_per_hour_pl_prod_labor + exp_per_hour_ma_labor + exp_per_hour_ic_labor_indirect + exp_per_hour_ic_labor_supervis + exp_per_hour_sd_labor_delivery + exp_per_hour_sd_dry_store_labor + exp_per_hour_oa_labor,TOTAL LABOR COST PER HOUR,dollar2dec,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,exp_per_hour_pl_prod_labor,exp_pl_prod_labor / num_total_hours,Productive Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_ma_labor,exp_ma_labor / num_total_hours,Mechanic Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_ic_labor_indirect,exp_ic_labor_indirect / num_total_hours,Indirect Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_ic_labor_supervis,exp_ic_labor_supervis / num_total_hours,Supervision Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_sd_labor_delivery,exp_sd_labor_delivery / num_total_hours,Delivery Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_sd_dry_store_labor,exp_sd_dry_store_labor / num_total_hours,Dry Store Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_oa_labor,exp_oa_labor / num_total_hours,Office Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_burden_ttl,exp_per_hour_ic_benefits + exp_per_hour_ic_insu_comp + exp_per_hour_ic_tax_payroll + exp_per_hour_exp_ow_outside_work,TOTAL LABOR BURDEN PER HOUR,dollar2dec,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,exp_per_hour_ic_benefits,exp_ic_benefits / num_total_hours,Benefits,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_ic_insu_comp,exp_ic_insu_comp / num_total_hours,Work Comp Insurance,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_ic_tax_payroll,exp_ic_tax_payroll / num_total_hours,Payroll Taxes,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,exp_per_hour_exp_ow_outside_work,exp_ow_outside_work / num_total_hours,Outside Work,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+,emp_cost_per_hour_ttl,exp_per_hour_labor_ttl + exp_per_hour_burden_ttl,TOTAL EMPLOYEE COST PER HOUR,dollar2dec,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,pcs_per_hour_ttl,pcs_ttl / num_total_hours,Pieces per hour,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_total_hours
+,pay_per_hour,total_pay / num_total_hours,Pay per hour,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_total_hours
+No of Dry Stores,num_dry_stores,,Number of Dry Stores,integer,last,monthly|ytd|quarterly|annual,TRUE,,,,,,
+No of pkg Plants,num_pkg_plants,,Number of Package Plants,integer,last,monthly|ytd|quarterly|annual,TRUE,,,,,,
+No of Sales Outlets,num_outlets,num_dry_stores + num_pkg_plants,Number of Sales Outlets,integer,last,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,ns_per_outlet,rev_net_sales / num_outlets,Net Sales Per Outlet,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_outlets
+,ns_per_outlet_week,ns_per_outlet / num_weeks,Net Sales Per Outlet per week,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
+,claims_per_outlet_per_month,exp_ic_claims / num_outlets,Claims Per Outlet per month,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_outlets
+,tele_data_per_outlet,exp_ut_tele_data / num_outlets,Telephone & Data per outlet,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,num_outlets
+,rt_num_pcs_ttl,rt_num_pcs_dry + rt_num_pcs_ldy,Total number of pieces,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,pct_rt_pcs_per_ttl_pcs,(rt_num_pcs_dry + rt_num_pcs_ldy) / pcs_ttl,Number of route per total pieces,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+RT DC Pieces,rt_num_pcs_dry,,Number of pieces Dry Cleaning,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,pct_rt_dry_pcs_per_rt_ttl_pcs,rt_num_pcs_dry / (rt_num_pcs_dry + rt_num_pcs_ldy),Percent of Dry Cleaning per route,pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_ttl_pcs
+,pct_rt_dry_pcs_per_ttl_dry_pcs,rt_num_pcs_dry  / pcs_dry,Percent of pieces per total dry cleaning,pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_dry
+RT LDRY Pieces,rt_num_pcs_ldy,,Number of pieces Laundry,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,pct_rt_ldy_pcs_per_rt_ttl_pcs,rt_num_pcs_ldy / (rt_num_pcs_dry + rt_num_pcs_ldy),Percent of Laundry per route,pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_ttl_pcs
+,pct_rt_ldy_pcs_per_ttl_ldy_pcs,rt_num_pcs_ldy  / pcs_ldy,Percent of pieces per total laundry,pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ldy
+RT Sales,rt_sales,,Route Sales,dollar,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,rt_price_per_piece,rt_sales  / (rt_num_pcs_dry + rt_num_pcs_ldy),Route Price per piece,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_ttl_pcs
+,pct_rt_sales_per_net_sales,rt_sales / rev_net_sales,Route Sales per Net Sales (%),pct2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rev_net_sales
+,rt_sales_per_week,rt_sales / num_weeks,Sales per week,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
+,rt_sales_per_hour,rt_sales / rt_num_hours,Sales per hour,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_hours
+RT Stops,rt_num_stops,,Number of stops,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,rt_sales_per_stop,rt_sales / rt_num_stops,Sales per stop,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_stops
+,rt_stops_per_week,rt_num_stops / num_weeks,Stops per week,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
+,rt_stops_per_hour_per_week,rt_num_stops / rt_num_hours / num_weeks,Stops per hour per week,num2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,
+No of Routes,rt_num_routes,,Number of routes,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,rt_sales_per_route,rt_sales / rt_num_routes,Sales per route,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_routes
+,rt_stops_per_route_per_week,rt_num_stops / rt_num_routes / num_weeks,Stops per route per week,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,
+RT Segments,rt_num_segments,,Number of segments,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,rt_sales_per_segment,rt_sales / rt_num_segments,Sales per segment,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_segments
+,rt_segments_per_route,rt_num_segments / rt_num_routes,Segments per route,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_routes
+,rt_stops_per_segment_per_week,rt_num_stops / rt_num_segments / num_weeks,Stops per segment per week,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,
+RT Trucks,rt_num_trucks,,Number of trucks,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
+,rt_sales_per_truck,rt_sales / rt_num_trucks,Sales per truck,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_trucks
+,rt_segments_per_truck,rt_num_segments / rt_num_trucks,Segments per truck,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_trucks
+,rt_stops_per_truck_per_week,rt_num_stops / rt_num_trucks /num_weeks,Stops per truck per week,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,
+RT Employees,rt_num_emp,,Number of employees,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,rt_sales_per_employee,rt_sales / rt_num_emp,Sales per employee,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,rt_num_emp
+RT Labor,rt_labor_cost,,Labor cost,dollar,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,pct_rt_labor_per_rt_sales,rt_labor_cost / rt_sales,Route Labor per Sales (%),pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,rt_sales
+RT Hours,rt_num_hours,,Number of hours,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
+,rt_wage_per_hour,rt_labor_cost / rt_num_hours,Wage per hour,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,rt_num_hours
