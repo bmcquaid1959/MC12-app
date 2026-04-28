@@ -71,7 +71,7 @@ Bad Debt,exp_oa_bad_debt,,Bad Debt,dollar,sum,monthly|ytd|quarterly|annual,FALSE
 Legal Prof Exp,exp_oa_legal_prof,,Legal Prof Exp,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,stack_component,expense_office_admin,
 ,exp_ttl,exp_pl_prod_labor + exp_ow_outside_work + exp_ps_ttl + exp_ut_ttl + exp_bg_ttl + exp_ma_ttl + exp_ic_ttl + exp_sd_ttl + exp_oa_ttl,Total Expenses,dollar,sum,monthly|ytd|quarterly|annual,FALSE,TRUE,TRUE,TRUE,peer_bar,expense_total,
 ,net_op_inc,rev_net_sales - exp_ttl,Net Operating Income,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,
-,exp_non_op_ttl,exp_ot_interest_exp + exp_ot_non_op_inc,Non-Operating expenses,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
+,exp_non_op_ttl,exp_ot_interest_exp - exp_ot_non_op_inc,Non-Operating expenses,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
 Interest Exp,exp_ot_interest_exp,,Interest Expense,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
 Other Non Op Inc or Exp,exp_ot_non_op_inc,,Other non-operating Income,dollar,sum,monthly|ytd|quarterly|annual,FALSE,FALSE,FALSE,FALSE,trend_line,profit_summary,
 ,net_profit,net_op_inc - exp_ot_interest_exp + exp_ot_non_op_inc,Net Profit,dollar,sum,monthly|ytd|quarterly|annual,TRUE,TRUE,TRUE,TRUE,trend_line,profit_summary,

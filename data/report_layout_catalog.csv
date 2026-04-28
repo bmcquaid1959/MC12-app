@@ -9,83 +9,82 @@ co_num,,,,,,,,,,,,,value,percent,rank
 co_id,,,,,,,,,,,,,value,percent,rank
 num_weeks,Weeks in period,Profit & Loss Statement,1,1,1,0,,detail,FALSE,,italics,,value,value,blank
 ,SALES,Profit & Loss Statement,2,2,1,0,double,section_header,TRUE,,bold,,value,percent,rank
-rev_dry,Dry Cleaning,Profit & Loss Statement,3,2,2,1,double,detail,FALSE,rev_gross_sales,,,value,percent,rank
-rev_ldy,Laundry,Profit & Loss Statement,4,2,3,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
-rev_ttl_ldy_dry,Dry Cleaning & Laundry Total ,Profit & Loss Statement,5,2,4,2,,sub_total,FALSE,rev_gross_sales,italics,,value,percent,rank
-rev_drape,Drapes,Profit & Loss Statement,6,2,5,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
-rev_tailor,Tailoring,Profit & Loss Statement,7,2,6,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
-rev_other,Other,Profit & Loss Statement,8,2,7,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
-rev_gross_sales,GROSS SALES,Profit & Loss Statement,9,2,8,0,thin,section_total,TRUE,,bold,,value,percent,rank
-disc_dry,Dry Cleaning Discount,Profit & Loss Statement,10,3,1,1,thin,detail,FALSE,disc_ttl,,,value,percent,rank
-disc_ldy,Laundry Discount,Profit & Loss Statement,11,3,2,1,,detail,FALSE,disc_ttl,,,value,percent,rank
-disc_ttl,TOTAL DISCOUNT,Profit & Loss Statement,12,3,3,0,thin,section_total,TRUE,,bold,,value,percent,rank
-rev_net_sales,NET SALES,Profit & Loss Statement,13,4,1,0,thick,total,TRUE,,bold,,value,value,blank
-,EXPENSES,Profit & Loss Statement,14,5,1,0,double,section_header,FALSE,exp_ttl,bold,,value,percent,rank
-exp_pl_prod_labor,Productive Labor,Profit & Loss Statement,15,6,1,2,double,detail,FALSE,exp_ttl,bold,,value,percent,rank
-exp_ow_outside_work,Outside Work,Profit & Loss Statement,16,6,2,2,,detail,FALSE,exp_ttl,bold,,value,percent,rank
-,PRODUCTIVE SUPPLIES,Profit & Loss Statement,17,7,1,1,thin,section_header,FALSE,exp_ps_ttl,bold,,value,percent,rank
-exp_ps_solv_soap_chem,Solv Soap Chem,Profit & Loss Statement,18,7,2,2,thin,detail,FALSE,exp_ps_ttl,,,value,percent,rank
-exp_ps_haz_waste,Haz Waste,Profit & Loss Statement,19,7,3,2,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
-exp_ps_finishing,Finishing,Profit & Loss Statement,20,7,4,2,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
-exp_ps_packaging,Packaging,Profit & Loss Statement,21,7,5,2,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
-exp_ps_ttl,TOTAL PRODUCTIVE SUPPLIES,Profit & Loss Statement,22,7,6,3,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-,UTILITIES,Profit & Loss Statement,23,8,1,1,thin,section_header,FALSE,exp_ut_ttl,bold,,value,percent,rank
-exp_ut_gas_oil,Gas / Oil,Profit & Loss Statement,24,8,2,2,thin,detail,FALSE,exp_ut_ttl,,,value,percent,rank
-exp_ut_electricity,Electricity,Profit & Loss Statement,25,8,3,2,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
-exp_ut_water_sewer,Water / Sewer,Profit & Loss Statement,26,8,4,2,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
-exp_ut_tele_data,Telephone / Data,Profit & Loss Statement,27,8,5,2,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
-exp_ut_ttl,TOTAL UTILITIES,Profit & Loss Statement,28,8,6,3,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-exp_bg_rent,Rent,Profit & Loss Statement,29,9,1,2,thin,detail,FALSE,exp_bg_ttl,,,value,percent,rank
-exp_bg_repairs_maint,Repairs / Maintenance,Profit & Loss Statement,30,9,2,2,,detail,FALSE,exp_bg_ttl,,,value,percent,rank
-exp_bg_depr,Depreciation,Profit & Loss Statement,31,9,3,2,,detail,FALSE,exp_bg_ttl,,,value,percent,rank
-exp_bg_ttl,TOTAL BUILDING,Profit & Loss Statement,32,9,4,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-exp_ma_labor,Labor,Profit & Loss Statement,33,10,1,2,thin,detail,FALSE,exp_ma_ttl,,,value,percent,rank
-exp_ma_repairs,Repairs,Profit & Loss Statement,34,10,2,2,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
-exp_ma_depr,Depreciation,Profit & Loss Statement,35,10,3,2,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
-exp_ma_leases,Equipment Leases,Profit & Loss Statement,36,10,4,2,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
-exp_ma_ttl,TOTAL MACHINE,Profit & Loss Statement,37,10,5,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-exp_ic_labor_indirect,Indirect Labor,Profit & Loss Statement,38,11,1,2,thin,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_benefits,Benefits,Profit & Loss Statement,39,11,2,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_labor_supervis,Supervisory Labor,Profit & Loss Statement,40,11,3,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_exp_incl_trash,Expenses w/ Trash,Profit & Loss Statement,41,11,4,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_insu_comp,Workers' Comp Insurance,Profit & Loss Statement,42,11,5,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_insu_prop_liab,Property Liability Insurance,Profit & Loss Statement,43,11,6,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_tax_payroll,Payroll Tax,Profit & Loss Statement,44,11,7,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_tax_other,Other Tax,Profit & Loss Statement,45,11,8,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_claims,Claims,Profit & Loss Statement,46,11,9,2,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
-exp_ic_ttl,TOTAL INDIRECT LABOR,Profit & Loss Statement,47,11,10,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-exp_sd_labor_delivery,Delivery Labor,Profit & Loss Statement,48,12,1,2,thin,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_fleet_expense,Fleet Expense,Profit & Loss Statement,49,12,2,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_delivery_depr,Depreciation,Profit & Loss Statement,50,12,3,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_fleet_insurance,Fleet insurance,Profit & Loss Statement,51,12,4,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_dry_store_exp,Dry Store Expenses,Profit & Loss Statement,52,12,5,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_dry_store_labor,Dry Store Labor,Profit & Loss Statement,53,12,6,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_dry_store_computer_exp,Dry Store Computer Expense,Profit & Loss Statement,54,12,7,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_dry_store_computer_depr,Dry Store Computer Deprec,Profit & Loss Statement,55,12,8,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_sales_promo_marketing,Sales / Promo marketing,Profit & Loss Statement,56,12,9,2,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
-exp_sd_ttl,TOTAL SALES AND DISTRIBUTION,Profit & Loss Statement,57,12,10,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-exp_oa_labor,Office & Admin Labor,Profit & Loss Statement,58,13,1,2,thin,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_supply,Office & Admin Supply,Profit & Loss Statement,59,13,2,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_expenses,Office & Admin Expense,Profit & Loss Statement,60,13,3,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_office_computer,Office Computer Expense,Profit & Loss Statement,61,13,4,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_plant_computer,Plant Computer Expense,Profit & Loss Statement,62,13,5,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_computer_and_office_depr,Computer and Office Deprec,Profit & Loss Statement,63,13,6,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_bad_debt,Bad Debt,Profit & Loss Statement,64,13,7,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_legal_prof,Legal Prof Exp,Profit & Loss Statement,65,13,8,2,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
-exp_oa_ttl,TOTAL OFFICE & ADMINISTRATION,Profit & Loss Statement,66,13,9,1,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
-exp_ttl,TOTAL EXPENSES,Profit & Loss Statement,67,14,1,0,thick,total,TRUE,,bold,,value,percent,rank
-net_op_inc,NET OPERATING INCOME,Profit & Loss Statement,68,15,1,0,thick,total,TRUE,,bold,,value,percent,rank
-exp_ot_interest_exp,Interest Expense,Profit & Loss Statement,69,16,1,2,,detail,FALSE,net_profit,,,value,percent,rank
-exp_ot_non_op_inc,Other non-operating Income,Profit & Loss Statement,70,16,2,2,,detail,FALSE,net_profit,,,value,percent,rank
-exp_non_op_ttl,Non-Operating expenses,Profit & Loss Statement,71,16,3,1,,sub-total,FALSE,net_profit,bold,,value,percent,rank
-net_profit,NET PROFIT,Profit & Loss Statement,72,16,4,0,double,total,TRUE,,bold,pl_np_start,value,percent,rank
-depr_total,Plus Depreciation Total,Profit & Loss Statement,73,17,1,1,double,detail,FALSE,cash_flow,,pl_nonop_cf_adj,value,percent,rank
-exp_ot_non_op_inc,Less/Plus Other non-operating Income,Profit & Loss Statement,74,17,2,1,,detail,FALSE,cash_flow,,pl_nonop_cf_adj,value,percent,rank
-cash_flow,CASH FLOW,Profit & Loss Statement,75,17,3,0,thick,total,TRUE,,bold,pl_nonop_cf_adj,value,percent,rank
-exp_ot_interest_exp,Plus Interest Expense,Profit & Loss Statement,76,17,4,1,,detail,FALSE,op_ebitda,,pl_interest_ebitda_adj,value,percent,rank
-op_ebitda,OPERATING EBITDA,Profit & Loss Statement,77,17,5,0,thick,total,TRUE,,bold,pl_interest_ebitda_adj,value,percent,rank
-exp_ot_non_op_inc,Less/Plus Other non-operating Inc or Exp,Profit & Loss Statement,78,17,6,1,,detail,FALSE,ebitda_w_noi,,pl_nonop_ebitda_adj,value,percent,rank
-ebitda_w_noi,EBITDA with NOI,Profit & Loss Statement,79,17,7,0,thick,total,TRUE,,bold,pl_nonop_ebitda_adj,value,percent,rank
+rev_gross_sales,GROSS SALES,Profit & Loss Statement,3,2,1,0,double,section_total,TRUE,,bold,,value,percent,rank
+rev_dry,Dry Cleaning,Profit & Loss Statement,4,2,2,1,thin,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_ldy,Laundry,Profit & Loss Statement,5,2,3,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_ttl_ldy_dry,Dry Cleaning & Laundry Total ,Profit & Loss Statement,6,2,4,2,thin,sub_total,FALSE,rev_gross_sales,italics,,value,percent,rank
+rev_drape,Drapes,Profit & Loss Statement,7,2,5,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_tailor,Tailoring,Profit & Loss Statement,8,2,6,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+rev_other,Other,Profit & Loss Statement,9,2,7,1,,detail,FALSE,rev_gross_sales,,,value,percent,rank
+disc_ttl,TOTAL DISCOUNT,Profit & Loss Statement,10,3,1,0,thin,section_total,TRUE,,bold,,value,percent,rank
+disc_dry,Dry Cleaning Discount,Profit & Loss Statement,11,3,2,1,thin,detail,FALSE,disc_ttl,,,value,percent,rank
+disc_ldy,Laundry Discount,Profit & Loss Statement,12,3,3,1,,detail,FALSE,disc_ttl,,,value,percent,rank
+rev_net_sales,NET SALES,Profit & Loss Statement,13,4,1,0,double,total,TRUE,,bold,,value,value,blank
+,EXPENSES,Profit & Loss Statement,14,5,1,0,double,section_header,TRUE,,bold,,value,percent,rank
+exp_pl_prod_labor,PRODUCTIVE LABOR,Profit & Loss Statement,15,6,1,3,double,detail,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ow_outside_work,OUTSIDE WORK,Profit & Loss Statement,16,6,2,3,thin,detail,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ps_ttl,PRODUCTIVE SUPPLIES,Profit & Loss Statement,17,7,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ps_solv_soap_chem,Solv Soap Chem,Profit & Loss Statement,18,7,2,4,thin,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_haz_waste,Haz Waste,Profit & Loss Statement,19,7,3,4,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_finishing,Finishing,Profit & Loss Statement,20,7,4,4,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ps_packaging,Packaging,Profit & Loss Statement,21,7,5,4,,detail,FALSE,exp_ps_ttl,,,value,percent,rank
+exp_ut_ttl,UTILITIES,Profit & Loss Statement,22,8,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ut_gas_oil,Gas / Oil,Profit & Loss Statement,23,8,2,4,thin,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_electricity,Electricity,Profit & Loss Statement,24,8,3,4,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_water_sewer,Water / Sewer,Profit & Loss Statement,25,8,4,4,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_ut_tele_data,Telephone / Data,Profit & Loss Statement,26,8,5,4,,detail,FALSE,exp_ut_ttl,,,value,percent,rank
+exp_bg_ttl,BUILDING,Profit & Loss Statement,27,9,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_bg_rent,Rent,Profit & Loss Statement,28,9,2,4,thin,detail,FALSE,exp_bg_ttl,,,value,percent,rank
+exp_bg_repairs_maint,Repairs / Maintenance,Profit & Loss Statement,29,9,3,4,,detail,FALSE,exp_bg_ttl,,,value,percent,rank
+exp_bg_depr,Depreciation,Profit & Loss Statement,30,9,4,4,,detail,FALSE,exp_bg_ttl,,,value,percent,rank
+exp_ma_ttl,MACHINE,Profit & Loss Statement,31,10,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ma_labor,Labor,Profit & Loss Statement,32,10,2,4,thin,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_repairs,Repairs,Profit & Loss Statement,33,10,3,4,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_depr,Depreciation,Profit & Loss Statement,34,10,4,4,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ma_leases,Equipment Leases,Profit & Loss Statement,35,10,5,4,,detail,FALSE,exp_ma_ttl,,,value,percent,rank
+exp_ic_ttl,INDIRECT LABOR,Profit & Loss Statement,36,11,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_ic_labor_indirect,Indirect Labor,Profit & Loss Statement,37,11,2,4,thin,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_benefits,Benefits,Profit & Loss Statement,38,11,3,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_labor_supervis,Supervisory Labor,Profit & Loss Statement,39,11,4,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_exp_incl_trash,Expenses w/ Trash,Profit & Loss Statement,40,11,5,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_insu_comp,Workers' Comp Insurance,Profit & Loss Statement,41,11,6,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_insu_prop_liab,Property Liability Insurance,Profit & Loss Statement,42,11,7,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_tax_payroll,Payroll Tax,Profit & Loss Statement,43,11,8,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_tax_other,Other Tax,Profit & Loss Statement,44,11,9,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_ic_claims,Claims,Profit & Loss Statement,45,11,10,4,,detail,FALSE,exp_ic_ttl,,,value,percent,rank
+exp_sd_ttl,SALES AND DISTRIBUTION,Profit & Loss Statement,46,12,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_sd_labor_delivery,Delivery Labor,Profit & Loss Statement,47,12,2,4,thin,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_fleet_expense,Fleet Expense,Profit & Loss Statement,48,12,3,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_delivery_depr,Depreciation,Profit & Loss Statement,49,12,4,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_fleet_insurance,Fleet insurance,Profit & Loss Statement,50,12,5,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_exp,Dry Store Expenses,Profit & Loss Statement,51,12,6,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_labor,Dry Store Labor,Profit & Loss Statement,52,12,7,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_computer_exp,Dry Store Computer Expense,Profit & Loss Statement,53,12,8,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_dry_store_computer_depr,Dry Store Computer Deprec,Profit & Loss Statement,54,12,9,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_sd_sales_promo_marketing,Sales / Promo marketing,Profit & Loss Statement,55,12,10,4,,detail,FALSE,exp_sd_ttl,,,value,percent,rank
+exp_oa_ttl,OFFICE & ADMINISTRATION,Profit & Loss Statement,56,13,1,2,thin,section_total,FALSE,exp_ttl,bold,,value,percent,rank
+exp_oa_labor,Office & Admin Labor,Profit & Loss Statement,57,13,2,4,thin,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_supply,Office & Admin Supply,Profit & Loss Statement,58,13,3,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_expenses,Office & Admin Expense,Profit & Loss Statement,59,13,4,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_office_computer,Office Computer Expense,Profit & Loss Statement,60,13,5,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_plant_computer,Plant Computer Expense,Profit & Loss Statement,61,13,6,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_computer_and_office_depr,Computer and Office Deprec,Profit & Loss Statement,62,13,7,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_bad_debt,Bad Debt,Profit & Loss Statement,63,13,8,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_oa_legal_prof,Legal Prof Exp,Profit & Loss Statement,64,13,9,4,,detail,FALSE,exp_oa_ttl,,,value,percent,rank
+exp_ttl,TOTAL EXPENSES,Profit & Loss Statement,65,14,1,0,thick,total,TRUE,,bold,,value,percent,rank
+,INCOME ANALYSIS,Profit & Loss Statement,66,15,1,0,double,section_header,TRUE,,bold,,value,percent,rank
+net_op_inc,NET OPERATING INCOME,Profit & Loss Statement,67,16,1,0,double,total,TRUE,,bold,,value,percent,rank
+exp_ot_interest_exp,- Interest Expense,Profit & Loss Statement,68,17,1,3,thick,detail,FALSE,net_op_inc,,,value,percent,rank
+exp_ot_non_op_inc,+/- Other non-operating Inc/Exp,Profit & Loss Statement,69,17,2,3,,detail,FALSE,net_op_inc,,,value,percent,rank
+exp_non_op_ttl,Non-Operating expenses,Profit & Loss Statement,70,17,3,2,thin,sub-total,FALSE,net_op_inc,bold,,value,percent,rank
+net_profit,NET PROFIT,Profit & Loss Statement,71,17,4,1,thick,total,TRUE,net_op_inc,bold,pl_np_start,value,percent,rank
+depr_total,+ Depreciation Total,Profit & Loss Statement,72,18,1,3,thick,detail,FALSE,net_op_inc,,pl_nonop_cf_adj,value,percent,rank
+exp_ot_non_op_inc,+/- Other non-operating Exp/Inc,Profit & Loss Statement,73,18,2,3,,detail,FALSE,net_op_inc,,pl_nonop_cf_adj,value,percent,rank
+cash_flow,CASH FLOW,Profit & Loss Statement,74,19,1,1,thin,total,TRUE,net_op_inc,bold,pl_nonop_cf_adj,value,percent,rank
+exp_ot_interest_exp,+ Interest Expense,Profit & Loss Statement,75,19,2,3,,detail,FALSE,net_op_inc,,pl_interest_ebitda_adj,value,percent,rank
+op_ebitda,OPERATING EBITDA,Profit & Loss Statement,76,20,1,1,thin,total,TRUE,net_op_inc,bold,pl_interest_ebitda_adj,value,percent,rank
+exp_ot_non_op_inc,+/- Other non-operating Inc/Exp,Profit & Loss Statement,77,20,2,3,,detail,FALSE,net_op_inc,,pl_nonop_ebitda_adj,value,percent,rank
+ebitda_w_noi,EBITDA with NOI,Profit & Loss Statement,78,21,1,1,thin,total,TRUE,net_op_inc,bold,pl_nonop_ebitda_adj,value,percent,rank
 ,PIECE VOLUME,Piece Analysis,1,1,1,0,,section_header,TRUE,,bold,,value,value,value
 pcs_ttl,Total Pieces,Piece Analysis,2,1,2,0,double,total,TRUE,,bold,,value,value,value
 pcs_dry,Dry Cleaning,Piece Analysis,3,1,3,1,thick,detail,FALSE,pcs_ttl,,,value,value,value
