@@ -74,17 +74,17 @@ exp_oa_legal_prof,Legal Prof Exp,Profit & Loss Statement,64,13,9,4,,detail,FALSE
 exp_ttl,TOTAL EXPENSES,Profit & Loss Statement,65,14,1,0,thick,total,TRUE,,bold,,value,percent,rank
 ,INCOME ANALYSIS,Profit & Loss Statement,66,15,1,0,double,section_header,TRUE,,bold,,value,percent,rank
 net_op_inc,NET OPERATING INCOME,Profit & Loss Statement,67,16,1,0,double,total,TRUE,,bold,,value,percent,rank
-exp_ot_interest_exp,- Interest Expense,Profit & Loss Statement,68,17,1,3,thick,detail,FALSE,net_op_inc,,,value,percent,rank
-exp_ot_non_op_inc,+/- Other non-operating Inc/Exp,Profit & Loss Statement,69,17,2,3,,detail,FALSE,net_op_inc,,,value,percent,rank
-exp_non_op_ttl,Non-Operating expenses,Profit & Loss Statement,70,17,3,2,thin,sub-total,FALSE,net_op_inc,bold,,value,percent,rank
-net_profit,NET PROFIT,Profit & Loss Statement,71,17,4,1,thick,total,TRUE,net_op_inc,bold,pl_np_start,value,percent,rank
-depr_total,+ Depreciation Total,Profit & Loss Statement,72,18,1,3,thick,detail,FALSE,net_op_inc,,pl_nonop_cf_adj,value,percent,rank
+exp_non_op_ttl,- Net Non-Operating expenses,Profit & Loss Statement,68,17,1,1,thin,sub-total,FALSE,net_op_inc,bold,,value,percent,rank
+exp_ot_interest_exp,- Interest Expense,Profit & Loss Statement,69,17,2,3,,detail,FALSE,exp_non_op_ttl,,,value,percent,rank
+exp_ot_non_op_inc,+/- Other non-operating Inc/Exp,Profit & Loss Statement,70,17,3,3,,detail,FALSE,exp_non_op_ttl,,,value,percent,rank
+net_profit,NET PROFIT,Profit & Loss Statement,71,17,4,0,thin,total,TRUE,net_op_inc,bold,pl_np_start,value,percent,rank
+depr_total,+ Depreciation Total,Profit & Loss Statement,72,18,1,3,thin,detail,FALSE,net_op_inc,,pl_nonop_cf_adj,value,percent,rank
 exp_ot_non_op_inc,+/- Other non-operating Exp/Inc,Profit & Loss Statement,73,18,2,3,,detail,FALSE,net_op_inc,,pl_nonop_cf_adj,value,percent,rank
-cash_flow,CASH FLOW,Profit & Loss Statement,74,19,1,1,thin,total,TRUE,net_op_inc,bold,pl_nonop_cf_adj,value,percent,rank
+cash_flow,CASH FLOW,Profit & Loss Statement,74,19,1,0,thin,total,TRUE,net_op_inc,bold,pl_nonop_cf_adj,value,percent,rank
 exp_ot_interest_exp,+ Interest Expense,Profit & Loss Statement,75,19,2,3,,detail,FALSE,net_op_inc,,pl_interest_ebitda_adj,value,percent,rank
-op_ebitda,OPERATING EBITDA,Profit & Loss Statement,76,20,1,1,thin,total,TRUE,net_op_inc,bold,pl_interest_ebitda_adj,value,percent,rank
+op_ebitda,OPERATING EBITDA,Profit & Loss Statement,76,20,1,0,thin,total,TRUE,net_op_inc,bold,pl_interest_ebitda_adj,value,percent,rank
 exp_ot_non_op_inc,+/- Other non-operating Inc/Exp,Profit & Loss Statement,77,20,2,3,,detail,FALSE,net_op_inc,,pl_nonop_ebitda_adj,value,percent,rank
-ebitda_w_noi,EBITDA with NOI,Profit & Loss Statement,78,21,1,1,thin,total,TRUE,net_op_inc,bold,pl_nonop_ebitda_adj,value,percent,rank
+ebitda_w_noi,EBITDA with NOI,Profit & Loss Statement,78,21,1,0,thin,total,TRUE,net_op_inc,bold,pl_nonop_ebitda_adj,value,percent,rank
 ,PIECE VOLUME,Piece Analysis,1,1,1,0,,section_header,TRUE,,bold,,value,value,value
 pcs_ttl,Total Pieces,Piece Analysis,2,1,2,0,double,total,TRUE,,bold,,value,value,value
 pcs_dry,Dry Cleaning,Piece Analysis,3,1,3,1,thick,detail,FALSE,pcs_ttl,,,value,value,value
