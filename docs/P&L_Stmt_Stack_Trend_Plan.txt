@@ -1,0 +1,66 @@
+P&L statement TABLE
+	Basis
+		Current month
+		Year-to-date
+		Trailing 3 months
+		Trailing 12 months
+	Display
+		Dollars
+		% of net sales
+		Peer Rank
+
+P&L statement COMPONENT STACK
+	Companies on the Y-AXIS
+	Basis
+		Current month
+		Year-to-date
+		Trailing 3 months
+		Trailing 12 months
+	Display
+		Dollars - Stack with dollars on x-axis
+		% of net sales - Stack to 100%
+	Groups
+		Gross Sales = Dry Cleaning + Laundry + Drapes + Tailoring + Other
+		Total Expenses = Productive Labor + Outside Work + Productive Supplies + Utilities + Building + Machine + Indirect Labor + Sales and Distribution + Office and Administration
+		Productive Supplies = Solv Soap Chem + Haz Waste + Finishing + Packaging
+		Utilities = Gas Oil + Electricity + Water Sewer + Telephone Data
+		Building = Rent + Repairs Maintenance + Depreciation
+		Machine = Labor + Repairs + Depreciation + Equipment Leases
+		Indirect Labor = Indirect Labor + Benefits + Supervisory Labor + Expenses w Trash + Workers' Comp Insurance + Property Liability Insurance + Payroll Tax + Other Tax + Claims
+		Sales and Distribution = Delivery Labor + Fleet Expense + Depreciation + Fleet Insurance + Dry Store Expenses + Dry Store Labor + Dry Store Computer Expense + Dry Store Computer Deprec + Sales Promo Marketing
+		Office and Administration = Office & Admin Labor + Office & Admin Supply + Office & Admin Expense + Office Computer Expense + Plant Computer Expense + Computer & Office Deprec + Bad Debt + Legal Prof Expense
+
+P&L statement TIME SERIES TREND
+	Companies as SERIES
+	Basis
+		Monthly
+		Quarterly
+		Annually
+	Display
+		Dollars - Stack with dollars on x-axis
+		% of net sales - Stack to 100%
+	Groups
+		Sales
+			Gross Sales
+			Dry Cleaning Sales
+			Laundry Sales
+			Drapes Sales
+			Tailoring Sales
+			Net Sales
+		Expenses	
+			Productive Labor
+			Outside Work
+			Productive Supplies
+			Utilities
+			Building
+			Machine
+			Indirect Labor
+			Sales & Administration
+			Office & Administration
+		Income Analysis
+			Net Operating Income
+			Net Profit
+			Cash Flow
+			Operating EBITDA
+			EBITDA with NOI
+			
