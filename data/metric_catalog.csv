@@ -87,24 +87,24 @@ Other PCS,pcs_other,,Other,integer,sum,monthly|ytd|quarterly|annual,TRUE,,,,,,
 ,pcs_per_week,pcs_ttl / num_weeks,Pieces per week,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
 ,pcs_per_outlet_per_week,pcs_per_outlet / num_weeks,Pieces per outlet per week,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_weeks
 ,pcs_per_employee,pcs_ttl / num_employees,Pieces per employee,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_employees
-,pcs_per_hour,pcs_ttl / num_total_hours,Pieces per hour,integer,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_total_hours
-,rev_per_pc_dry,(rev_dry - disc_dry) / pcs_dry,Dry Cleaning Net Revenue,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_dry
-,rev_per_pc_ldy,(rev_ldy - disc_ldy) / pcs_ldy,Laundry Net Revenue,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ldy
-,rev_per_pc_ttl,rev_net_sales / pcs_ttl,Total Net Revenue,dollar,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ttl
-,exp_per_pc_prod_labor,exp_pl_prod_labor / pcs_ttl,Productive Labor,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_outside_work,exp_ow_outside_work / pcs_ttl,Outside Work,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_prod_sup,exp_ps_ttl / pcs_ttl,Productive Supplies,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_util,exp_ut_ttl / pcs_ttl,Utilities,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_bldg,exp_bg_ttl / pcs_ttl,Building,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_mach,exp_ma_ttl / pcs_ttl,Machine,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_ind_cost,exp_ic_ttl / pcs_ttl,Indirect Labor,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_sales_deliv,exp_sd_ttl / pcs_ttl,Sales & Delivery,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_office_admin,exp_oa_ttl / pcs_ttl,Office & Administration,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_ttl,exp_ttl / pcs_ttl,Total Expenses,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,TRUE,,,pcs_ttl
-,exp_per_pc_net_op_inc,rev_per_pc_ttl / pcs_ttl,Net Operating Profit,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_interest_exp,exp_ot_interest_exp / pcs_ttl,Interest Expense,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_other_non_op_inc,exp_ot_non_op_inc / pcs_ttl,Non-Operating Income,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
-,exp_per_pc_net_profit,net_profit / pcs_ttl,Net Profit,dollar,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,pcs_per_hour,pcs_ttl / num_total_hours,Pieces per hour,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_total_hours
+,rev_per_pc_dry,(rev_dry - disc_dry) / pcs_dry,Dry Cleaning Net Revenue,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_dry
+,rev_per_pc_ldy,(rev_ldy - disc_ldy) / pcs_ldy,Laundry Net Revenue,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ldy
+,rev_per_pc_ttl,rev_net_sales / pcs_ttl,Total Net Revenue,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,pcs_ttl
+,exp_per_pc_prod_labor,exp_pl_prod_labor / pcs_ttl,Productive Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_outside_work,exp_ow_outside_work / pcs_ttl,Outside Work,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_prod_sup,exp_ps_ttl / pcs_ttl,Productive Supplies,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_util,exp_ut_ttl / pcs_ttl,Utilities,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_bldg,exp_bg_ttl / pcs_ttl,Building,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_mach,exp_ma_ttl / pcs_ttl,Machine,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_ind_cost,exp_ic_ttl / pcs_ttl,Indirect Labor,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_sales_deliv,exp_sd_ttl / pcs_ttl,Sales & Delivery,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_office_admin,exp_oa_ttl / pcs_ttl,Office & Administration,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_ttl,exp_ttl / pcs_ttl,Total Expenses,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,TRUE,,,pcs_ttl
+,exp_per_pc_net_op_inc,rev_per_pc_ttl - exp_per_pc_ttl,Net Operating Profit,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_interest_exp,exp_ot_interest_exp / pcs_ttl,Interest Expense,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_other_non_op_inc,exp_ot_non_op_inc / pcs_ttl,Non-Operating Income,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
+,exp_per_pc_net_profit,net_profit / pcs_ttl,Net Profit,dollar2dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,pcs_ttl
 Total Hours,num_total_hours,,Total hours,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
 ,act_pcs_per_hour,pcs_ttl / num_total_hours,Actual Pieces per hour,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,num_total_hours
 ,std_counter_20,(pcs_dry / 3 + pcs_ldy / 5 + pcs_other ) / 20,Standard Counter (20),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
@@ -115,8 +115,8 @@ Total Hours,num_total_hours,,Total hours,integer,sum,monthly|ytd|quarterly|annua
 ,std_IAB_60,(pcs_dry + pcs_ldy + pcs_other ) / 60,Standard IAB (60),integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,
 ,std_ttl_hours,std_counter_20 + std_markin_75 + std_dry_spot_75 + std_dry_finish_25 + std_ldy_finish_25 + std_IAB_60,Total Standard Hours,integer,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,TRUE,,,
 ,std_pcs_per_hour,pcs_ttl / std_ttl_hours,Standard Pieces per hour,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,std_ttl_hours
-,act_pcs_per_std_pcs,act_pcs_per_hour / std_pcs_per_hour,Actual as % of Standard,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,std_pcs_per_hour
-,std_pcs_per_act_pcs,std_pcs_per_hour / act_pcs_per_hour,Standard as % of Actual,num1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,act_pcs_per_hour
+,act_pcs_per_std_pcs,act_pcs_per_hour / std_pcs_per_hour,Actual as % of Standard,pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,TRUE,,,,,,std_pcs_per_hour
+,std_pcs_per_act_pcs,std_pcs_per_hour / act_pcs_per_hour,Standard as % of Actual,pct1dec,ratio_recalc,monthly|ytd|quarterly|annual,FALSE,,,,,,act_pcs_per_hour
 No of Employees,num_employees,,Number of Employees,integer,last,monthly|ytd|quarterly|annual,FALSE,,,,,,
 No of Emplyees Hired,num_emp_hired,,Employees hired,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,
 No of Emplyees Left,num_emp_left,,Employees departed,integer,sum,monthly|ytd|quarterly|annual,FALSE,,,,,,

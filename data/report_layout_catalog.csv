@@ -85,50 +85,48 @@ exp_ot_interest_exp,+ Interest Expense,Profit & Loss Statement,75,19,2,3,,detail
 op_ebitda,OPERATING EBITDA,Profit & Loss Statement,76,20,1,0,thin,total,TRUE,net_op_inc,bold,pl_interest_ebitda_adj,Income,value,percent,rank
 exp_ot_non_op_inc,+/- Other non-operating Inc/Exp,Profit & Loss Statement,77,20,2,3,,detail,FALSE,net_op_inc,,pl_nonop_ebitda_adj,,value,percent,rank
 ebitda_w_noi,EBITDA with NOI,Profit & Loss Statement,78,21,1,0,thin,total,TRUE,net_op_inc,bold,pl_nonop_ebitda_adj,Income,value,percent,rank
-,PIECE VOLUME,Piece Analysis,1,1,1,0,,section_header,TRUE,,bold,,,value,value,value
+,PIECE VOLUME,Piece Analysis,1,1,1,0,double,section_header,TRUE,,bold,,,value,value,value
 pcs_ttl,Total Pieces,Piece Analysis,2,1,2,0,double,total,TRUE,,bold,,,value,value,value
-pcs_dry,Dry Cleaning,Piece Analysis,3,1,3,1,thick,detail,FALSE,pcs_ttl,,,,value,value,value
-pcs_ldy,Laundry,Piece Analysis,4,1,4,1,,detail,FALSE,pcs_ttl,,,,value,value,value
-pcs_other,Other,Piece Analysis,5,1,5,1,,detail,FALSE,pcs_ttl,,,,value,value,value
-,PIECES PER RESOURCE,Piece Analysis,6,2,1,0,,section_header,TRUE,,bold,,,value,value,value
-pcs_per_outlet,Pieces per outlet,Piece Analysis,7,2,2,1,double,detail,TRUE,,bold,,,value,value,value
-pcs_per_week,Pieces per week,Piece Analysis,8,2,3,1,,detail,TRUE,,,,,value,value,value
-pcs_per_outlet_per_week,Pieces per outlet per week,Piece Analysis,9,2,4,1,,detail,TRUE,,,,,value,value,value
-pcs_per_employee,Pieces per employee,Piece Analysis,10,2,5,1,,detail,TRUE,,,,,value,value,value
-pcs_per_hour,Pieces per hour,Piece Analysis,11,2,6,1,,detail,TRUE,,,,,value,value,value
-,REVENUE per PIECE,Piece Analysis,12,3,1,0,,section_header,TRUE,,bold,,,value,value,value
-rev_per_pc_dry,Dry Cleaning Net Revenue /pc,Piece Analysis,13,3,2,1,double,detail,TRUE,,,,,value,value,value
-rev_per_pc_ldy,Laundry Net Revenue /pc,Piece Analysis,14,3,3,1,,detail,TRUE,,,,,value,value,value
-rev_per_pc_ttl,Total Net Revenue /pc,Piece Analysis,15,3,4,0,thick,sub-total,TRUE,,bold,,,value,value,value
-,EXPENSE per PIECE,Piece Analysis,16,4,1,0,thick,section_header,TRUE,,bold,,,value,value,value
-exp_per_pc_prod_labor,Productive Labor /pc,Piece Analysis,17,4,2,1,double,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_outside_work,Outside Work /pc,Piece Analysis,18,4,3,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_prod_sup,Productive Supplies /pc,Piece Analysis,19,4,4,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_util,Utilities /pc,Piece Analysis,20,4,5,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_bldg,Building /pc,Piece Analysis,21,4,6,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_mach,Machine /pc,Piece Analysis,22,4,7,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_ind_cost,Indirect Labor /pc,Piece Analysis,23,4,8,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_sales_deliv,Sales & Delivery /pc,Piece Analysis,24,4,9,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_office_admin,Office & Administration /pc,Piece Analysis,25,4,10,1,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
-exp_per_pc_ttl,Total Expenses /pc,Piece Analysis,26,4,11,0,thick,total,TRUE,,bold,,,value,value,value
-exp_per_pc_net_op_inc,Net Operating Profit /pc,Piece Analysis,27,4,12,0,thick,total,FALSE,exp_per_pc_net_profit,bold,,,value,value,value
-exp_per_pc_interest_exp,Interest Expense /pc,Piece Analysis,28,4,13,1,thick,detail,FALSE,exp_per_pc_net_profit,,,,value,value,value
-exp_per_pc_other_non_op_inc,Non-Operating Income /pc,Piece Analysis,29,4,14,1,,detail,FALSE,exp_per_pc_net_profit,,,,value,value,value
-exp_per_pc_net_profit,Net Profit /pc /pc,Piece Analysis,30,4,15,0,thick,total,TRUE,,bold,,,value,value,value
-,ACTUAL VS STANDARD PERFORMANCE,Piece Analysis,31,5,1,0,thick,section_header,TRUE,,bold,,,value,value,value
-num_total_hours,Total hours,Piece Analysis,32,5,2,1,double,detail,TRUE,act_pcs_per_hour,,,,value,value,value
-pcs_ttl,Total pieces,Piece Analysis,33,5,3,1,,detail,TRUE,act_pcs_per_hour,,,,value,value,value
-act_pcs_per_hour,Actual Pieces per hour,Piece Analysis,34,5,4,0,thick,total,TRUE,,bold,,,value,value,value
-std_counter_20,Standard Counter (20),Piece Analysis,35,5,5,1,thick,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_markin_75,Standard Mark-in (75),Piece Analysis,36,5,6,1,,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_dry_spot_75,Standard DC Spot (75),Piece Analysis,37,5,7,1,,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_dry_finish_25,Standard DC Finish (75),Piece Analysis,38,5,8,1,,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_ldy_finish_25,Standard Laundry Finish (25),Piece Analysis,39,5,9,1,,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_IAB_60,Standard IAB (60),Piece Analysis,40,5,10,1,,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_ttl_hours,Total Standard Hours,Piece Analysis,41,5,11,1,thick,detail,FALSE,std_ttl_hours,,,,value,value,value
-std_pcs_per_hour,Standard Pieces per hour,Piece Analysis,42,5,12,0,thick,total,TRUE,,bold,,,value,value,value
-act_pcs_per_std_pcs,Actual as % of Standard,Piece Analysis,43,5,13,1,,detail,TRUE,,bold,,,value,value,value
-std_pcs_per_act_pcs,Standard as % of Actual,Piece Analysis,44,5,14,1,,detail,TRUE,,bold,,,value,value,value
+pcs_dry,Dry Cleaning,Piece Analysis,3,1,3,1,thick,detail,FALSE,,,,Total Pieces,value,value,value
+pcs_ldy,Laundry,Piece Analysis,4,1,4,1,,detail,FALSE,,,,Total Pieces,value,value,value
+pcs_other,Other,Piece Analysis,5,1,5,1,,detail,FALSE,,,,Total Pieces,value,value,value
+,PIECES PER RESOURCE,Piece Analysis,6,2,1,0,double,section_header,TRUE,,bold,,,value,value,value
+pcs_per_week,Pieces per week,Piece Analysis,7,2,2,1,double,detail,TRUE,,,,Pieces per Resource,value,value,value
+pcs_per_outlet,Pieces per outlet,Piece Analysis,8,2,3,1,,detail,TRUE,,,,Pieces per Resource,value,value,value
+pcs_per_outlet_per_week,Pieces per outlet per week,Piece Analysis,9,2,4,1,,detail,TRUE,,,,Pieces per Resource,value,value,value
+pcs_per_employee,Pieces per employee,Piece Analysis,10,2,5,1,,detail,TRUE,,,,Pieces per Resource,value,value,value
+pcs_per_hour,Pieces per hour,Piece Analysis,11,2,6,1,,detail,TRUE,,,,Pieces per Resource,value,value,value
+,PROFIT PER PIECE ANALYSIS,Piece Analysis,12,3,1,0,double,section_header,TRUE,,bold,,,value,value,value
+rev_per_pc_ttl,Total Net Revenue /pc,Piece Analysis,13,3,2,0,double,sub-total,TRUE,,bold,,,value,value,value
+rev_per_pc_dry,Dry Cleaning Net Revenue /pc,Piece Analysis,14,3,3,2,thin,detail,FALSE,rev_per_pc_ttl,,,,value,value,value
+rev_per_pc_ldy,Laundry Net Revenue /pc,Piece Analysis,15,3,4,2,,detail,FALSE,rev_per_pc_ttl,,,,value,value,value
+exp_per_pc_ttl,Total Expenses /pc,Piece Analysis,16,3,5,0,double,total,TRUE,,bold,,,value,value,value
+exp_per_pc_prod_labor,Productive Labor /pc,Piece Analysis,17,3,6,2,double,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_outside_work,Outside Work /pc,Piece Analysis,18,3,7,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_prod_sup,Productive Supplies /pc,Piece Analysis,19,3,8,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_util,Utilities /pc,Piece Analysis,20,3,9,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_bldg,Building /pc,Piece Analysis,21,3,10,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_mach,Machine /pc,Piece Analysis,22,3,11,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_ind_cost,Indirect Labor /pc,Piece Analysis,23,3,12,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_sales_deliv,Sales & Delivery /pc,Piece Analysis,24,3,13,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_office_admin,Office & Administration /pc,Piece Analysis,25,3,14,2,,detail,FALSE,exp_per_pc_ttl,,,,value,value,value
+exp_per_pc_net_op_inc,Net Operating Profit /pc,Piece Analysis,26,3,15,1,thick,total,TRUE,,bold,,,value,value,value
+exp_per_pc_interest_exp,Interest Expense /pc,Piece Analysis,27,3,16,2,thick,detail,FALSE,exp_per_pc_net_op_inc,,,,value,value,value
+exp_per_pc_other_non_op_inc,Non-Operating Income /pc,Piece Analysis,28,3,17,2,double,detail,FALSE,exp_per_pc_net_op_inc,,,,value,value,value
+exp_per_pc_net_profit,Net Profit /pc,Piece Analysis,29,3,18,0,thick,total,TRUE,,bold,,,value,value,value
+,ACTUAL VS STANDARD PERFORMANCE,Piece Analysis,31,4,1,0,double,section_header,TRUE,,bold,,,value,value,value
+num_total_hours,Total hours,Piece Analysis,32,4,2,2,double,detail,TRUE,,,,,value,value,value
+act_pcs_per_hour,Actual Pieces per hour,Piece Analysis,33,4,3,1,thick,total,TRUE,,bold,,,value,value,value
+std_pcs_per_hour,Standard Pieces per hour,Piece Analysis,34,4,4,0,thick,total,TRUE,,bold,,,value,value,value
+std_counter_20,Standard Counter (20),Piece Analysis,35,4,5,2,thick,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+std_markin_75,Standard Mark-in (75),Piece Analysis,36,4,6,2,,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+std_dry_spot_75,Standard DC Spot (75),Piece Analysis,37,4,7,2,,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+std_dry_finish_25,Standard DC Finish (75),Piece Analysis,38,4,8,2,,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+std_ldy_finish_25,Standard Laundry Finish (25),Piece Analysis,39,4,9,2,,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+std_IAB_60,Standard IAB (60),Piece Analysis,40,4,10,2,,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+std_ttl_hours,Total Standard Hours,Piece Analysis,41,4,11,2,thin,detail,FALSE,std_pcs_per_hour,,,,value,value,value
+act_pcs_per_std_pcs,Actual as % of Standard,Piece Analysis,42,4,12,2,thick,detail,TRUE,,,,,value,value,value
+std_pcs_per_act_pcs,Standard as % of Actual,Piece Analysis,43,4,13,2,,detail,TRUE,,,,,value,value,value
 ,EMPLOYEES,Labor Analysis,1,1,1,,thick,section_header,TRUE,,,,,value,value,value
 num_employees,Number of Employees,Labor Analysis,2,1,2,0,double,detail,TRUE,,,,,value,value,value
 num_emp_hired,Employees hired,Labor Analysis,3,1,3,1,,detail,FALSE,num_employees,,,,value,value,value
